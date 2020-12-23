@@ -1,0 +1,139 @@
+@import './nord';
+
+body {
+	background: $nord0;
+	color: $nord6;
+	font-family: 'Raleway', sans-serif;
+}
+
+#namecard {
+	border-radius: 15px;
+	box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
+	height: 350px;
+	margin: auto;
+	margin-top: 50px;
+
+	position: relative;
+	width: 700px;
+}
+
+@keyframes showHideHey {
+	15%, 85% { transform: translate3d(0, 0, 0); }
+	100% { transform: translate3d(0, 110%, 0); }
+}
+
+@keyframes showName {
+	85% { transform: translate3d(0, 110%, 0); }
+	100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes showBottom {
+	0%, 50%  { transform: translate3d(0, -100%, 0); }
+	70%, 85% { transform: translate3d(0, -50%, 0); }
+	100% { transform: translate3d(0, 0%, 0); }
+}
+
+#animated-title {
+	height: 300px;
+	left: 30px;
+	position: absolute;
+	top: 20px;
+	width: 450px;
+}
+
+#top-half {
+	border-bottom: 1px solid $nord6;
+	height: 50px;
+	overflow: hidden;
+
+	position: absolute;
+	width: 100%;
+}
+
+#top-half > div {
+	animation-fill-mode: forwards;
+	color: $nord8;
+	font-size: 24pt;
+
+	font-weight: 500;
+	padding-left: 4px;
+	position: absolute;
+	top: 5px;
+
+	transform: translate(0, 110%);
+}
+
+#bottom-half {
+	height: 250px;
+	overflow: hidden;
+    
+	position: absolute;
+	top: 50px;
+	width: 100%;
+}
+
+#namecard-hey {
+	animation: showHideHey 2s;
+	animation-delay: .5s;
+}
+
+#namecard-name {
+	animation: showName 2s;
+	animation-delay: .5s;
+}
+
+#namecard-text {
+	animation: showBottom 2s;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
+	display: block;
+	font-size: 13pt;
+
+	font-weight: 300;
+	padding-left: 5px;
+	padding-top: 9px;
+	position: absolute;
+	transform: translate(0, -100%);
+
+	.hey {
+		color: $nord8;
+		font-weight: 500;
+	}
+
+	.ucb {
+		color: $nord10;
+		font-weight: 500;
+	}
+
+	.amazon {
+		color: $nord12;
+		font-weight: 500;
+	}
+}
+
+#namecard-pfp {
+	position: absolute;
+	right: 12px;
+	top: 30px;
+}
+
+.social-icon {
+	filter: invert(94%) sepia(3%) saturate(945%) hue-rotate(187deg) brightness(60%) contrast(89%);
+	transition: filter 0.2s ease-out;
+
+	&:hover {
+		filter: invert(97%) sepia(2%) saturate(533%) hue-rotate(184deg) brightness(97%) contrast(97%);
+	}
+}
+
+#namecard-github {
+	bottom: 75px;
+	position: absolute;
+	right: 130px;
+}
+
+#namecard-linkedin {
+	bottom: 75px;
+	position: absolute;
+	right: 60px;
+}

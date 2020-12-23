@@ -1,0 +1,206 @@
+body {
+  background: #2E3440;
+  color: #ECEFF4;
+  font-family: 'Raleway', sans-serif;
+}
+
+#namecard {
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
+  height: 350px;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  width: 700px;
+}
+
+@-webkit-keyframes showHideHey {
+  15%, 85% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 110%, 0);
+            transform: translate3d(0, 110%, 0);
+  }
+}
+
+@keyframes showHideHey {
+  15%, 85% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 110%, 0);
+            transform: translate3d(0, 110%, 0);
+  }
+}
+
+@-webkit-keyframes showName {
+  85% {
+    -webkit-transform: translate3d(0, 110%, 0);
+            transform: translate3d(0, 110%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showName {
+  85% {
+    -webkit-transform: translate3d(0, 110%, 0);
+            transform: translate3d(0, 110%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes showBottom {
+  0%, 50% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  70%, 85% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0%, 0);
+            transform: translate3d(0, 0%, 0);
+  }
+}
+
+@keyframes showBottom {
+  0%, 50% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  70%, 85% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0%, 0);
+            transform: translate3d(0, 0%, 0);
+  }
+}
+
+#animated-title {
+  height: 300px;
+  left: 30px;
+  position: absolute;
+  top: 20px;
+  width: 450px;
+}
+
+#top-half {
+  border-bottom: 1px solid #ECEFF4;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+#top-half > div {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: #88C0D0;
+  font-size: 24pt;
+  font-weight: 500;
+  padding-left: 4px;
+  position: absolute;
+  top: 5px;
+  -webkit-transform: translate(0, 110%);
+          transform: translate(0, 110%);
+}
+
+#bottom-half {
+  height: 250px;
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+#namecard-hey {
+  -webkit-animation: showHideHey 2s;
+          animation: showHideHey 2s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+#namecard-name {
+  -webkit-animation: showName 2s;
+          animation: showName 2s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+#namecard-text {
+  -webkit-animation: showBottom 2s;
+          animation: showBottom 2s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: block;
+  font-size: 13pt;
+  font-weight: 300;
+  padding-left: 5px;
+  padding-top: 9px;
+  position: absolute;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+
+#namecard-text .hey {
+  color: #88C0D0;
+  font-weight: 500;
+}
+
+#namecard-text .ucb {
+  color: #5E81AC;
+  font-weight: 500;
+}
+
+#namecard-text .amazon {
+  color: #D08770;
+  font-weight: 500;
+}
+
+#namecard-pfp {
+  position: absolute;
+  right: 12px;
+  top: 30px;
+}
+
+.social-icon {
+  -webkit-filter: invert(94%) sepia(3%) saturate(945%) hue-rotate(187deg) brightness(60%) contrast(89%);
+          filter: invert(94%) sepia(3%) saturate(945%) hue-rotate(187deg) brightness(60%) contrast(89%);
+  -webkit-transition: -webkit-filter 0.2s ease-out;
+  transition: -webkit-filter 0.2s ease-out;
+  transition: filter 0.2s ease-out;
+  transition: filter 0.2s ease-out, -webkit-filter 0.2s ease-out;
+}
+
+.social-icon:hover {
+  -webkit-filter: invert(97%) sepia(2%) saturate(533%) hue-rotate(184deg) brightness(97%) contrast(97%);
+          filter: invert(97%) sepia(2%) saturate(533%) hue-rotate(184deg) brightness(97%) contrast(97%);
+}
+
+#namecard-github {
+  bottom: 75px;
+  position: absolute;
+  right: 130px;
+}
+
+#namecard-linkedin {
+  bottom: 75px;
+  position: absolute;
+  right: 60px;
+}
+/*# sourceMappingURL=style.css.map */
