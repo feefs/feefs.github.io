@@ -11,44 +11,58 @@
 </head>
 <body>
     <!-- namecard -->
-    <div id="namecard">
-        <div id="animated-title">
-            <!-- top -->
-            <div id="top-half">
-                <div id="namecard-hey">Hey there!</div>
-                <div id = "namecard-name">Felix Yan</div>
+    <div id="namecard" class="card">
+        <!-- animated -->
+        <div id="animated-left">
+            <div class="top-half">
+                <div class="namecard-hey">Hey there!</div>
+                <div class="namecard-name">Felix Yan</div>
             </div>
-            <!-- bottom -->
-            <div id="bottom-half">
-                <div id="namecard-text">
+            <div class="bottom-half">
+                <div class="namecard-text">
                     <span>
-                        <span class="hey">Hey there!</span> I'm a 2nd-year Computer Science student at
+                        <span class="hey">Hey there!</span>
+                        I'm a 2nd-year Computer Science student at
                         <a style="text-decoration: none;" href="https://www.berkeley.edu/" target="_blank" class="ucb">UC Berkeley</a>.
-                        I will be joining <a style="text-decoration: none;" href="https://www.amazon.com/" target="_blank" class="amazon">Amazon</a>
+                        I will be joining
+                        <a style="text-decoration: none;" href="https://www.amazon.com/" target="_blank" class="amazon">Amazon</a>
                         as a Software Development Engineer Intern in Summer 2021.
                         <br><br>
                     </span>
                     <span>
-                        In my recent free time, I have been working on a custom computer loop,
-                        building a mechanical keyboard, and learning a little bit of web development.
+                        In my recent free time, I have been building a new computer + mechanical keyboard,
+                        "investing" using
+                        <a style="text-decoration: none;" href="https://robinhood.com/" target="_blank" class="robinhood">Robinhood</a>,
+                        and learning a little bit of web development.
                         <br><br>
                     </span>
                     <span>
-                        My favorite university courses so far have been CS 161 (Computer Security)
-                        and CS186 (Database Systems). I aspire to TA one of these amazing classes in the future!
+                        My favorite university courses so far have been
+                        <a style="text-decoration: none;" href="https://cs161.org/"target="_blank" class="cs161">CS 161</a>
+                        (Computer Security) and
+                        <a style="text-decoration: none;" href="https://cs186berkeley.net/" target="_blank" class="cs186">CS 186</a>
+                        (Database Systems). I aspire to TA one of these amazing classes in the future!
                         <br><br>
                     </span>
                 </div>
             </div>
         </div>
-        <!-- right -->
-        <img id="namecard-pfp" src="assets/namecard/pfp.png" alt="Profile Picture" width="200">
-        <a href="https://github.com/feefs" target="_blank">
-            <img class="social-icon" id="namecard-github" src="assets/namecard/github.svg" alt="Github" width = "25">
-        </a>
-        <a href="https://www.linkedin.com/in/feefs/" target="_blank">
-            <img class="social-icon" id="namecard-linkedin" src="assets/namecard/linkedin.svg" alt="Linkedin" width = "25">
-        </a>
+        <!-- animated -->
+        <div id="animated-right">
+            <img class="pfp" src="assets/namecard/pfp.png" alt="Profile Picture" width="200">
+            <a href="https://github.com/feefs" target="_blank">
+                <img class="social-icon-github" src="assets/namecard/github.svg" alt="Github" width = "25">
+            </a>
+            <a href="https://www.linkedin.com/in/feefs/" target="_blank">
+                <img class="social-icon-linkedin" src="assets/namecard/linkedin.svg" alt="Linkedin" width = "25">
+            </a>
+        </div>
+    </div>
+    <!-- activitycard -->
+    <div id="activitycard" class="card">
+        <div>
+            <span class="wip">Work in progress.</span>
+        </div>
     </div>
 </body>
 </html>

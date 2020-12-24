@@ -1,0 +1,168 @@
+@import './nord';
+
+@keyframes showHideHey {
+	15%, 85% { transform: translate(0, 0); }
+	100% { transform: translate(0, 110%); }
+}
+
+@keyframes showName {
+	85% { transform: translate(0, 110%); }
+	100% { transform: translate(0, 0); }
+}
+
+@keyframes showBottom {
+	50% { transform: translate(0, -100%); }
+	70%, 85% { transform: translate(0, -50%); }
+	100% { transform: translate(0, 0%); }
+}
+
+@keyframes showSocialIcon {
+	85% { transform: translate(0, -100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+
+#namecard {
+	background: linear-gradient(-45deg, $nord1, $nord0, $nord0, $nord1);
+	height: 340px;
+	margin-top: 50px;
+}
+
+#animated-left {
+	position: absolute;
+	width: 450px;
+	height: 300px;
+	
+	top: 20px;
+	left: 30px;
+
+	.top-half {
+		border-bottom: 1px solid $nord6;
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		height: 50px;
+		
+		div {
+			position: absolute;
+			padding-left: 4px;
+			top: 5px;
+
+			color: $nord8;
+			font-size: 24pt;
+			font-weight: 500;
+		
+			transform: translate(0, 110%);
+		}
+	
+		.namecard-hey {
+			animation: showHideHey 2s;
+			animation-delay: 0.5s;
+			animation-fill-mode: forwards;
+		}
+	
+		.namecard-name {
+			animation: showName 2s;
+			animation-delay: 0.5s;
+			animation-fill-mode: forwards;
+		}
+	}
+
+	.bottom-half {
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		height: 250px;
+		top: 50px;
+
+		.namecard-text {
+			display: block;
+
+			position: absolute;
+			padding-left: 5px;
+			padding-top: 9px;
+
+			font-size: 13pt;
+			font-weight: 300;
+			
+			animation: showBottom 2s;
+			animation-delay: 0.5s;
+			animation-fill-mode: forwards;
+			transform: translate(0, -100%);
+		
+			.hey {
+				color: $nord8;
+				font-weight: 500;
+			}
+		
+			.ucb {
+				color: $nord10;
+				font-weight: 500;
+			}
+		
+			.amazon {
+				color: $nord12;
+				font-weight: 500;
+			}
+
+			.robinhood {
+				color: $nord14;
+				font-weight: 500;
+			}
+
+			.cs161 {
+				color: $nord15;
+				font-weight: 500;
+			}
+
+			.cs186 {
+				color: $nord15;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+#animated-right {
+	position: absolute;
+	width: 200px;
+	height: 250px;
+	top: 30px;
+	right: 10px;
+
+	img[class^='social-icon'] {
+		bottom: 10px;
+		opacity: 0;
+
+		animation: showSocialIcon 2s;
+		animation-delay: 0.5s;
+		animation-fill-mode: forwards;
+		transform: translate(0, -100%);
+
+		filter: invert(94%) sepia(3%) saturate(945%) hue-rotate(187deg) brightness(60%) contrast(89%);
+		transition: filter 0.2s ease-out;
+
+		&:hover {
+			filter: invert(97%) sepia(2%) saturate(533%) hue-rotate(184deg) brightness(97%) contrast(97%);
+		}
+	}
+
+	.pfp {
+		position: absolute;
+	}
+
+	.social-icon-github {
+		position: absolute;
+		left: 55px;
+	}
+
+	.social-icon-linkedin {
+		position: absolute;
+		right: 50px;
+	}
+}
