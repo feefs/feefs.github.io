@@ -3,8 +3,9 @@
           box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   position: relative;
-  width: 700px;
   margin: auto;
+  width: 90%;
+  max-width: 700px;
 }
 
 @-webkit-keyframes showHideHey {
@@ -109,27 +110,41 @@
 
 #namecard {
   background: linear-gradient(-45deg, #3B4252, #2E3440, #2E3440, #3B4252);
-  height: 340px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
-#animated-left {
-  position: absolute;
-  width: 450px;
-  height: 300px;
+@media screen and (min-width: 800px) {
+  #namecard {
+    margin-top: 50px;
+    height: 340px;
+  }
+}
+
+#animated-text {
+  position: relative;
+  margin: auto;
+  width: 80%;
   top: 20px;
-  left: 30px;
 }
 
-#animated-left .top-half {
+@media screen and (min-width: 800px) {
+  #animated-text {
+    margin: unset;
+    width: 450px;
+    height: 300px;
+    left: 30px;
+  }
+}
+
+#animated-text .top-half {
   border-bottom: 1px solid #ECEFF4;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   width: 100%;
   height: 50px;
 }
 
-#animated-left .top-half div {
+#animated-text .top-half div {
   position: absolute;
   padding-left: 4px;
   top: 5px;
@@ -140,7 +155,7 @@
           transform: translate(0, 110%);
 }
 
-#animated-left .top-half .namecard-hey {
+#animated-text .top-half .namecard-hey {
   -webkit-animation: showHideHey 2s;
           animation: showHideHey 2s;
   -webkit-animation-delay: 0.5s;
@@ -149,7 +164,7 @@
           animation-fill-mode: forwards;
 }
 
-#animated-left .top-half .namecard-name {
+#animated-text .top-half .namecard-name {
   -webkit-animation: showName 2s;
           animation: showName 2s;
   -webkit-animation-delay: 0.5s;
@@ -158,19 +173,17 @@
           animation-fill-mode: forwards;
 }
 
-#animated-left .bottom-half {
-  position: absolute;
+#animated-text .bottom-half {
+  position: relative;
   overflow: hidden;
   width: 100%;
-  height: 250px;
-  top: 50px;
 }
 
-#animated-left .bottom-half .namecard-text {
+#animated-text .bottom-half .namecard-text {
   display: block;
-  position: absolute;
   padding-left: 5px;
   padding-top: 9px;
+  padding-bottom: 9px;
   font-size: 13pt;
   font-weight: 300;
   -webkit-animation: showBottom 2s;
@@ -183,46 +196,55 @@
           transform: translate(0, -100%);
 }
 
-#animated-left .bottom-half .namecard-text .hey {
+#animated-text .bottom-half .namecard-text .hey {
   color: #88C0D0;
   font-weight: 500;
 }
 
-#animated-left .bottom-half .namecard-text .ucb {
+#animated-text .bottom-half .namecard-text .ucb {
   color: #5E81AC;
   font-weight: 500;
 }
 
-#animated-left .bottom-half .namecard-text .amazon {
+#animated-text .bottom-half .namecard-text .amazon {
   color: #D08770;
   font-weight: 500;
 }
 
-#animated-left .bottom-half .namecard-text .robinhood {
+#animated-text .bottom-half .namecard-text .robinhood {
   color: #A3BE8C;
   font-weight: 500;
 }
 
-#animated-left .bottom-half .namecard-text .cs161 {
+#animated-text .bottom-half .namecard-text .cs161 {
   color: #B48EAD;
   font-weight: 500;
 }
 
-#animated-left .bottom-half .namecard-text .cs186 {
+#animated-text .bottom-half .namecard-text .cs186 {
   color: #B48EAD;
   font-weight: 500;
 }
 
-#animated-right {
-  position: absolute;
+#animated-icons {
+  position: relative;
+  margin: auto;
   width: 200px;
-  height: 250px;
-  top: 30px;
-  right: 10px;
+  height: 270px;
+  top: 5px;
 }
 
-#animated-right img[class^='social-icon'] {
-  bottom: 10px;
+#animated-icons .social-icon-github {
+  left: 55px;
+}
+
+#animated-icons .social-icon-linkedin {
+  right: 50px;
+}
+
+#animated-icons img[class^='social-icon'] {
+  position: absolute;
+  bottom: 35px;
   opacity: 0;
   -webkit-animation: showSocialIcon 2s;
           animation: showSocialIcon 2s;
@@ -240,23 +262,18 @@
   transition: filter 0.2s ease-out, -webkit-filter 0.2s ease-out;
 }
 
-#animated-right img[class^='social-icon']:hover {
+#animated-icons img[class^='social-icon']:hover {
   -webkit-filter: invert(97%) sepia(2%) saturate(533%) hue-rotate(184deg) brightness(97%) contrast(97%);
           filter: invert(97%) sepia(2%) saturate(533%) hue-rotate(184deg) brightness(97%) contrast(97%);
 }
 
-#animated-right .pfp {
-  position: absolute;
-}
-
-#animated-right .social-icon-github {
-  position: absolute;
-  left: 55px;
-}
-
-#animated-right .social-icon-linkedin {
-  position: absolute;
-  right: 50px;
+@media screen and (min-width: 800px) {
+  #animated-icons {
+    position: absolute;
+    height: 275px;
+    top: 30px;
+    right: 10px;
+  }
 }
 
 @-webkit-keyframes showCard {
@@ -289,7 +306,7 @@
   background: -webkit-gradient(linear, right top, left top, from(#3B4252), to(#2E3440));
   background: linear-gradient(-90deg, #3B4252, #2E3440);
   height: 500px;
-  margin-top: 50px;
+  margin-top: 30px;
   opacity: 0;
   -webkit-animation: showCard 2s;
           animation: showCard 2s;
@@ -299,6 +316,12 @@
           animation-fill-mode: forwards;
   -webkit-transform: translate(0, -5%);
           transform: translate(0, -5%);
+}
+
+@media screen and (min-width: 800px) {
+  #activitycard {
+    margin-top: 50px;
+  }
 }
 
 #activitycard div {

@@ -29,21 +29,30 @@
 
 #namecard {
 	background: linear-gradient(-45deg, $nord1, $nord0, $nord0, $nord1);
-	height: 340px;
-	margin-top: 50px;
+	margin-top: $gap;
+
+	@media screen and (min-width: $desktop) {
+		margin-top: $gap + 20px;
+		height: 340px;
+	}
 }
 
-#animated-left {
-	position: absolute;
-	width: 450px;
-	height: 300px;
-	
+#animated-text {
+	position: relative;
+	margin: auto;
+	width: 80%;
 	top: 20px;
-	left: 30px;
+
+	@media screen and (min-width: $desktop) {
+		margin: unset;
+		width: 450px;
+		height: 300px;
+		left: 30px;
+	}
 
 	.top-half {
 		border-bottom: 1px solid $nord6;
-		position: absolute;
+		position: relative;
 		overflow: hidden;
 		width: 100%;
 		height: 50px;
@@ -74,18 +83,15 @@
 	}
 
 	.bottom-half {
-		position: absolute;
+		position: relative;
 		overflow: hidden;
 		width: 100%;
-		height: 250px;
-		top: 50px;
 
 		.namecard-text {
 			display: block;
-
-			position: absolute;
 			padding-left: 5px;
 			padding-top: 9px;
+			padding-bottom: 9px;
 
 			font-size: 13pt;
 			font-weight: 300;
@@ -128,15 +134,24 @@
 	}
 }
 
-#animated-right {
-	position: absolute;
+#animated-icons {
+	position: relative;
+	margin: auto;
 	width: 200px;
-	height: 250px;
-	top: 30px;
-	right: 10px;
+	height: 270px;
+	top: 5px;
+
+	.social-icon-github {
+		left: 55px;
+	}
+
+	.social-icon-linkedin {
+		right: 50px;
+	}
 
 	img[class^='social-icon'] {
-		bottom: 10px;
+		position: absolute;
+		bottom: 35px;
 		opacity: 0;
 
 		animation: showSocialIcon 2s;
@@ -152,17 +167,10 @@
 		}
 	}
 
-	.pfp {
+	@media screen and (min-width: $desktop) {
 		position: absolute;
-	}
-
-	.social-icon-github {
-		position: absolute;
-		left: 55px;
-	}
-
-	.social-icon-linkedin {
-		position: absolute;
-		right: 50px;
+		height: 275px;
+		top: 30px;
+		right: 10px;
 	}
 }

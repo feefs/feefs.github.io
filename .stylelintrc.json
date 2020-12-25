@@ -16,6 +16,7 @@
     "order/properties-alphabetical-order": null,
     "order/properties-order": [
       "position",
+      "margin",
       "overflow",
       "width",
       "height",
