@@ -4,91 +4,98 @@
   border-radius: 15px;
   position: relative;
   margin: auto;
+  margin-top: 30px;
   width: 90%;
   max-width: 700px;
 }
 
+@media screen and (min-width: 800px) {
+  .card {
+    margin-top: 50px;
+  }
+}
+
 @-webkit-keyframes showHideHey {
-  15%, 85% {
+  15%, 75% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  100% {
+  90%, 100% {
     -webkit-transform: translate(0, 110%);
             transform: translate(0, 110%);
   }
 }
 
 @keyframes showHideHey {
-  15%, 85% {
+  15%, 75% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  100% {
+  90%, 100% {
     -webkit-transform: translate(0, 110%);
             transform: translate(0, 110%);
   }
 }
 
 @-webkit-keyframes showName {
-  85% {
+  75% {
     -webkit-transform: translate(0, 110%);
             transform: translate(0, 110%);
   }
-  100% {
+  90%, 100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
 }
 
 @keyframes showName {
-  85% {
+  75% {
     -webkit-transform: translate(0, 110%);
             transform: translate(0, 110%);
   }
-  100% {
+  90%, 100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
 }
 
 @-webkit-keyframes showBottom {
-  50% {
+  45% {
     -webkit-transform: translate(0, -100%);
             transform: translate(0, -100%);
   }
-  70%, 85% {
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
+  60%, 75% {
+    -webkit-transform: translate(0, -80%);
+            transform: translate(0, -80%);
   }
-  100% {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+  90%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
 @keyframes showBottom {
-  50% {
+  45% {
     -webkit-transform: translate(0, -100%);
             transform: translate(0, -100%);
   }
-  70%, 85% {
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
+  60%, 75% {
+    -webkit-transform: translate(0, -80%);
+            transform: translate(0, -80%);
   }
-  100% {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+  90%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
 @-webkit-keyframes showSocialIcon {
-  85% {
+  75% {
     -webkit-transform: translate(0, -100%);
             transform: translate(0, -100%);
     opacity: 0;
   }
-  100% {
+  90%, 100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     opacity: 1;
@@ -96,12 +103,12 @@
 }
 
 @keyframes showSocialIcon {
-  85% {
+  75% {
     -webkit-transform: translate(0, -100%);
             transform: translate(0, -100%);
     opacity: 0;
   }
-  100% {
+  90%, 100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     opacity: 1;
@@ -110,12 +117,10 @@
 
 #namecard {
   background: linear-gradient(-45deg, #3B4252, #2E3440, #2E3440, #3B4252);
-  margin-top: 30px;
 }
 
 @media screen and (min-width: 800px) {
   #namecard {
-    margin-top: 50px;
     height: 340px;
   }
 }
@@ -203,27 +208,22 @@
 
 #animated-text .bottom-half .namecard-text .ucb {
   color: #5E81AC;
-  font-weight: 500;
 }
 
 #animated-text .bottom-half .namecard-text .amazon {
   color: #D08770;
-  font-weight: 500;
 }
 
 #animated-text .bottom-half .namecard-text .robinhood {
   color: #A3BE8C;
-  font-weight: 500;
 }
 
 #animated-text .bottom-half .namecard-text .cs161 {
   color: #B48EAD;
-  font-weight: 500;
 }
 
 #animated-text .bottom-half .namecard-text .cs186 {
   color: #B48EAD;
-  font-weight: 500;
 }
 
 #animated-icons {
@@ -277,12 +277,12 @@
 }
 
 @-webkit-keyframes showCard {
-  85% {
+  75% {
     -webkit-transform: translate(0, -5%);
             transform: translate(0, -5%);
     opacity: 0;
   }
-  100% {
+  90%, 100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     opacity: 1;
@@ -290,12 +290,12 @@
 }
 
 @keyframes showCard {
-  85% {
+  75% {
     -webkit-transform: translate(0, -5%);
             transform: translate(0, -5%);
     opacity: 0;
   }
-  100% {
+  90%, 100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     opacity: 1;
@@ -306,7 +306,6 @@
   background: -webkit-gradient(linear, right top, left top, from(#3B4252), to(#2E3440));
   background: linear-gradient(-90deg, #3B4252, #2E3440);
   height: 500px;
-  margin-top: 30px;
   opacity: 0;
   -webkit-animation: showCard 2s;
           animation: showCard 2s;
@@ -316,12 +315,6 @@
           animation-fill-mode: forwards;
   -webkit-transform: translate(0, -5%);
           transform: translate(0, -5%);
-}
-
-@media screen and (min-width: 800px) {
-  #activitycard {
-    margin-top: 50px;
-  }
 }
 
 #activitycard div {
@@ -337,4 +330,4 @@ body {
   color: #ECEFF4;
   font-family: 'Raleway', sans-serif;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=home.css.map */

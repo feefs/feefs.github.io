@@ -1,21 +1,14 @@
-@import './nord';
-
 @keyframes showCard {
-	85% { transform: translate(0, -5%);
+	75% { transform: translate(0, -5%);
 		opacity: 0; }
 
-	100% { transform: translate(0, 0);
+	90%, 100% { transform: translate(0, 0);
 		opacity: 1; }
 }
 
 #activitycard {
 	background: linear-gradient(-90deg, $nord1, $nord0);
 	height: 500px;
-	margin-top: $gap;
-
-	@media screen and (min-width: $desktop) {
-		margin-top: $gap + 20px;
-	}
 
 	opacity: 0;
 	animation: showCard 2s;

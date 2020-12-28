@@ -1,0 +1,141 @@
+.card {
+  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 700px;
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    margin-top: 50px;
+  }
+}
+
+@-webkit-keyframes showCard {
+  0% {
+    -webkit-transform: translate(0, -5%);
+            transform: translate(0, -5%);
+    opacity: 0;
+  }
+  15%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes showCard {
+  0% {
+    -webkit-transform: translate(0, -5%);
+            transform: translate(0, -5%);
+    opacity: 0;
+  }
+  15%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showHome {
+  45% {
+    -webkit-transform: translate(0, -25%);
+            transform: translate(0, -25%);
+    opacity: 0;
+  }
+  60%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes showHome {
+  45% {
+    -webkit-transform: translate(0, -25%);
+            transform: translate(0, -25%);
+    opacity: 0;
+  }
+  60%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+[id='404card'] {
+  background: linear-gradient(45deg, #3B4252, #2E3440, #2E3440, #2E3440, #3B4252);
+  height: 300px;
+  opacity: 0;
+  -webkit-animation: showCard 2s;
+          animation: showCard 2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: translate(0, -5%);
+          transform: translate(0, -5%);
+}
+
+#contents {
+  position: relative;
+  margin: auto;
+  top: 15%;
+}
+
+#contents .whoops {
+  border-bottom: 2px solid #ECEFF4;
+  position: relative;
+  margin: auto;
+  width: 250px;
+  height: 70px;
+  text-align: center;
+  font-size: 36pt;
+}
+
+#contents div[class^='animated'] {
+  position: relative;
+  opacity: 0;
+  -webkit-animation: showHome 2s;
+          animation: showHome 2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+}
+
+#contents .animated-text {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 28pt;
+}
+
+#contents .animated-icon {
+  margin: auto;
+  width: 50px;
+  top: 20px;
+  -webkit-filter: invert(94%) sepia(3%) saturate(945%) hue-rotate(187deg) brightness(60%) contrast(89%);
+          filter: invert(94%) sepia(3%) saturate(945%) hue-rotate(187deg) brightness(60%) contrast(89%);
+  -webkit-transition: -webkit-filter 0.2s ease-out;
+  transition: -webkit-filter 0.2s ease-out;
+  transition: filter 0.2s ease-out;
+  transition: filter 0.2s ease-out, -webkit-filter 0.2s ease-out;
+}
+
+#contents .animated-icon:hover {
+  -webkit-filter: invert(97%) sepia(2%) saturate(533%) hue-rotate(184deg) brightness(97%) contrast(97%);
+          filter: invert(97%) sepia(2%) saturate(533%) hue-rotate(184deg) brightness(97%) contrast(97%);
+}
+
+body {
+  background: #2E3440;
+  color: #ECEFF4;
+  font-family: 'Raleway', sans-serif;
+}
+/*# sourceMappingURL=404.css.map */

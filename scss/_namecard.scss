@@ -1,27 +1,25 @@
-@import './nord';
-
 @keyframes showHideHey {
-	15%, 85% { transform: translate(0, 0); }
-	100% { transform: translate(0, 110%); }
+	15%, 75% { transform: translate(0, 0); }
+	90%, 100% { transform: translate(0, 110%); }
 }
 
 @keyframes showName {
-	85% { transform: translate(0, 110%); }
-	100% { transform: translate(0, 0); }
+	75% { transform: translate(0, 110%); }
+	90%, 100% { transform: translate(0, 0); }
 }
 
 @keyframes showBottom {
-	50% { transform: translate(0, -100%); }
-	70%, 85% { transform: translate(0, -50%); }
-	100% { transform: translate(0, 0%); }
+	45% { transform: translate(0, -100%); }
+	60%, 75% { transform: translate(0, -80%); }
+	90%, 100% { transform: translate(0, 0); }
 }
 
 @keyframes showSocialIcon {
-	85% { transform: translate(0, -100%);
+	75% { transform: translate(0, -100%);
 		opacity: 0;
 	}
 
-	100% {
+	90%, 100% {
 		transform: translate(0, 0);
 		opacity: 1;
 	}
@@ -29,10 +27,8 @@
 
 #namecard {
 	background: linear-gradient(-45deg, $nord1, $nord0, $nord0, $nord1);
-	margin-top: $gap;
 
 	@media screen and (min-width: $desktop) {
-		margin-top: $gap + 20px;
 		height: 340px;
 	}
 }
@@ -108,27 +104,22 @@
 		
 			.ucb {
 				color: $nord10;
-				font-weight: 500;
 			}
 		
 			.amazon {
 				color: $nord12;
-				font-weight: 500;
 			}
 
 			.robinhood {
 				color: $nord14;
-				font-weight: 500;
 			}
 
 			.cs161 {
 				color: $nord15;
-				font-weight: 500;
 			}
 
 			.cs186 {
 				color: $nord15;
-				font-weight: 500;
 			}
 		}
 	}
