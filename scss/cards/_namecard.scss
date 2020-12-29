@@ -10,7 +10,7 @@
 
 @keyframes showBottom {
 	45% { transform: translate(0, -100%); }
-	60%, 75% { transform: translate(0, -80%); }
+	60%, 75% { transform: translate(0, -70%); }
 	90%, 100% { transform: translate(0, 0); }
 }
 
@@ -100,26 +100,32 @@
 			.hey {
 				color: $nord8;
 				font-weight: 500;
+				cursor: pointer;
 			}
 		
 			.ucb {
 				color: $nord10;
+				font-weight: 500;
 			}
 		
 			.amazon {
 				color: $nord12;
+				font-weight: 500;
 			}
 
 			.robinhood {
 				color: $nord14;
+				font-weight: 500;
 			}
 
 			.cs161 {
 				color: $nord15;
+				font-weight: 500;
 			}
 
 			.cs186 {
 				color: $nord15;
+				font-weight: 500;
 			}
 		}
 	}
@@ -130,7 +136,13 @@
 	margin: auto;
 	width: 200px;
 	height: 270px;
-	top: 5px;
+
+	.pfp-hey {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+	}
 
 	.social-icon-github {
 		left: 55px;

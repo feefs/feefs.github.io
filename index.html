@@ -21,7 +21,7 @@
             <div class="bottom-half">
                 <div class="namecard-text">
                     <span>
-                        <span class="hey">Hey there!</span>
+                        <span class="hey" onmouseover="heyOver()" onmouseout="heyOut()">Hey there!</span>
                         I'm a 2nd-year Computer Science student at
                         <a style="text-decoration: none;" href="https://www.berkeley.edu/" target="_blank" class="ucb">UC Berkeley</a>.
                         I will be joining
@@ -30,7 +30,7 @@
                         <br><br>
                     </span>
                     <span>
-                        In my recent free time, I have been building a new computer + mechanical keyboard,
+                        In my recent free time, I've been building a new computer + mechanical keyboard,
                         "investing" using
                         <a style="text-decoration: none;" href="https://robinhood.com/" target="_blank" class="robinhood">Robinhood</a>,
                         and learning a little bit of web development.
@@ -49,6 +49,7 @@
         <!-- animated -->
         <div id="animated-icons">
             <img class="pfp" src="assets/namecard/pfp.png" alt="Profile Picture" width="200">
+            <img class="pfp-hey" id="pfp-hey" src="assets/namecard/pfp-hey.png" alt="Profile Picture Hey" width="200">
             <a href="https://github.com/feefs" target="_blank">
                 <img class="social-icon-github" src="assets/namecard/github.svg" alt="Github" width = "25">
             </a>
@@ -63,5 +64,6 @@
             <span class="wip">Work in progress.</span>
         </div>
     </div>
+    <script src="js/home.js"></script>
 </body>
 </html>

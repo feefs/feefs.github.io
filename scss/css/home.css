@@ -65,8 +65,8 @@
             transform: translate(0, -100%);
   }
   60%, 75% {
-    -webkit-transform: translate(0, -80%);
-            transform: translate(0, -80%);
+    -webkit-transform: translate(0, -70%);
+            transform: translate(0, -70%);
   }
   90%, 100% {
     -webkit-transform: translate(0, 0);
@@ -80,8 +80,8 @@
             transform: translate(0, -100%);
   }
   60%, 75% {
-    -webkit-transform: translate(0, -80%);
-            transform: translate(0, -80%);
+    -webkit-transform: translate(0, -70%);
+            transform: translate(0, -70%);
   }
   90%, 100% {
     -webkit-transform: translate(0, 0);
@@ -204,26 +204,32 @@
 #animated-text .bottom-half .namecard-text .hey {
   color: #88C0D0;
   font-weight: 500;
+  cursor: pointer;
 }
 
 #animated-text .bottom-half .namecard-text .ucb {
   color: #5E81AC;
+  font-weight: 500;
 }
 
 #animated-text .bottom-half .namecard-text .amazon {
   color: #D08770;
+  font-weight: 500;
 }
 
 #animated-text .bottom-half .namecard-text .robinhood {
   color: #A3BE8C;
+  font-weight: 500;
 }
 
 #animated-text .bottom-half .namecard-text .cs161 {
   color: #B48EAD;
+  font-weight: 500;
 }
 
 #animated-text .bottom-half .namecard-text .cs186 {
   color: #B48EAD;
+  font-weight: 500;
 }
 
 #animated-icons {
@@ -231,7 +237,13 @@
   margin: auto;
   width: 200px;
   height: 270px;
-  top: 5px;
+}
+
+#animated-icons .pfp-hey {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
 #animated-icons .social-icon-github {
