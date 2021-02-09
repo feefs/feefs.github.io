@@ -121,7 +121,7 @@
 
 @media screen and (min-width: 800px) {
   #namecard {
-    height: 340px;
+    height: 400px;
   }
 }
 
@@ -129,7 +129,7 @@
   position: relative;
   margin: auto;
   width: 80%;
-  top: 20px;
+  top: 17.5px;
 }
 
 @media screen and (min-width: 800px) {
@@ -217,18 +217,33 @@
   font-weight: 500;
 }
 
-#animated-text .bottom-half .namecard-text .robinhood {
+#animated-text .bottom-half .namecard-text .data100 {
+  color: #B48EAD;
+  font-weight: 500;
+}
+
+#animated-text .bottom-half .namecard-text .cs162 {
+  color: #B48EAD;
+  font-weight: 500;
+}
+
+#animated-text .bottom-half .namecard-text .cs188 {
+  color: #B48EAD;
+  font-weight: 500;
+}
+
+#animated-text .bottom-half .namecard-text .cs61b {
+  color: #B48EAD;
+  font-weight: 500;
+}
+
+#animated-text .bottom-half .namecard-text .csm {
   color: #A3BE8C;
   font-weight: 500;
 }
 
-#animated-text .bottom-half .namecard-text .cs161 {
-  color: #B48EAD;
-  font-weight: 500;
-}
-
-#animated-text .bottom-half .namecard-text .cs186 {
-  color: #B48EAD;
+#animated-text .bottom-half .namecard-text .upe {
+  color: #81A1C1;
   font-weight: 500;
 }
 
@@ -283,7 +298,7 @@
   #animated-icons {
     position: absolute;
     height: 275px;
-    top: 30px;
+    top: 62.5px;
     right: 10px;
   }
 }

@@ -29,7 +29,7 @@
 	background: linear-gradient(-45deg, $nord1, $nord0, $nord0, $nord1);
 
 	@media screen and (min-width: $desktop) {
-		height: 340px;
+		height: 400px;
 	}
 }
 
@@ -37,7 +37,7 @@
 	position: relative;
 	margin: auto;
 	width: 80%;
-	top: 20px;
+	top: 17.5px;
 
 	@media screen and (min-width: $desktop) {
 		margin: unset;
@@ -113,18 +113,33 @@
 				font-weight: 500;
 			}
 
-			.robinhood {
+			.data100 {
+				color: $nord15;
+				font-weight: 500;
+			}
+
+			.cs162 {
+				color: $nord15;
+				font-weight: 500;
+			}
+
+			.cs188 {
+				color: $nord15;
+				font-weight: 500;
+			}
+
+			.cs61b {
+				color: $nord15;
+				font-weight: 500;
+			}
+
+			.csm {
 				color: $nord14;
 				font-weight: 500;
 			}
 
-			.cs161 {
-				color: $nord15;
-				font-weight: 500;
-			}
-
-			.cs186 {
-				color: $nord15;
+			.upe {
+				color: $nord9;
 				font-weight: 500;
 			}
 		}
@@ -173,7 +188,7 @@
 	@media screen and (min-width: $desktop) {
 		position: absolute;
 		height: 275px;
-		top: 30px;
+		top: 62.5px;
 		right: 10px;
 	}
 }
