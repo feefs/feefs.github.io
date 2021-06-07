@@ -29,7 +29,7 @@
 	background: linear-gradient(-45deg, $nord1, $nord0, $nord0, $nord1);
 
 	@media screen and (min-width: $desktop) {
-		height: 400px;
+		height: 420px;
 	}
 }
 
@@ -52,7 +52,7 @@
 		overflow: hidden;
 		width: 100%;
 		height: 50px;
-		
+
 		div {
 			position: absolute;
 			padding-left: 4px;
@@ -61,16 +61,16 @@
 			color: $nord8;
 			font-size: 24pt;
 			font-weight: 500;
-		
+
 			transform: translate(0, 110%);
 		}
-	
+
 		.namecard-hey {
 			animation: showHideHey 2s;
 			animation-delay: 0.5s;
 			animation-fill-mode: forwards;
 		}
-	
+
 		.namecard-name {
 			animation: showName 2s;
 			animation-delay: 0.5s;
@@ -91,50 +91,30 @@
 
 			font-size: 13pt;
 			font-weight: 300;
-			
+
 			animation: showBottom 2s;
 			animation-delay: 0.5s;
 			animation-fill-mode: forwards;
 			transform: translate(0, -100%);
-		
+
 			.hey {
 				color: $nord8;
 				font-weight: 500;
 				cursor: pointer;
 			}
-		
+
 			.ucb {
 				color: $nord10;
 				font-weight: 500;
 			}
-		
+
 			.amazon {
 				color: $nord12;
 				font-weight: 500;
 			}
 
-			.data100 {
-				color: $nord15;
-				font-weight: 500;
-			}
-
-			.cs162 {
-				color: $nord15;
-				font-weight: 500;
-			}
-
-			.cs188 {
-				color: $nord15;
-				font-weight: 500;
-			}
-
-			.cs61b {
-				color: $nord15;
-				font-weight: 500;
-			}
-
-			.csm {
-				color: $nord14;
+			.tesla {
+				color: $nord11;
 				font-weight: 500;
 			}
 
@@ -188,7 +168,7 @@
 	@media screen and (min-width: $desktop) {
 		position: absolute;
 		height: 275px;
-		top: 62.5px;
+		top: 72.5px;
 		right: 10px;
 	}
 }
